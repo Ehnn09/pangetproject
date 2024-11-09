@@ -1,11 +1,12 @@
-import Link from "next/link"
-export default function Home(){
-  return( 
-    <main>
-    <h2>Home Page</h2>
+import Link from 'next/link';
 
-    <Link href="/message">Next</Link>
-    </main>
-  )
+const Home = () => (
+  <div>
+    <h1>Welcome to My Next.js Website</h1>
+    <Link href="/message/page1">
+      <button>Start</button>
+    </Link>
+  </div>
+);
 
-}
+export default Home;
