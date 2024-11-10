@@ -1,4 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {}
 
-module.exports = nextConfig
+module.exports = {
+    cacheHandler: require.resolve('./cache-handler.js'),
+    cacheMaxMemorySize: 0, // disable default in-memory caching
+  }
+
+
+  module.exports = {
+    generateBuildId: async () => {
+      // This could be anything, using the latest git hash
+      return process.env.GIT_HASH
+    },
+  }

@@ -4,7 +4,7 @@ import '../styles/globals.css';
 
 const Home = () => (
   <div>
-    <h1>Welcome to My Next.js Homepage</h1>
+    <h1>Welcome Panget</h1>
     <Link href="/page1">
       <button>Go to Page 1</button>
     </Link>
